@@ -1,0 +1,205 @@
+/* that is basic styling for all pages */
+body {
+  width : 100%; /*% relative to parent element*/
+  max-width : 1300px; /*absolute units px*/
+  margin : auto; /*margin set to auto for right and left center elemnts inside their parent*/
+  padding : 0.25rem;
+}
+
+/* that we used for our  Homepage specific styling */
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #f5f4f4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+
+
+.login-links a:hover {
+  background-color: #2980b9;
+}
+
+/* that we used to style for login pages */
+input {
+  margin: 5px;
+  padding: 5px;
+}
+
+footer  p{
+
+    font-size : 1.75;
+}
+
+button {
+  padding: 6px 12px;
+  margin-top: 10px;
+  background-color: lightblue;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+h2 {
+  color: darkblue;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+/* that we used to Style student login page */
+.login-box {
+  max-width: 350px;
+  margin: 100px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.login-box label {
+  text-align: left;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.login-box input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+}
+
+.login-box button {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #2980b9;
+}
+
+
+
+
+.dashboard-box h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.dashboard-box p {
+  color: #444;
+  font-size: 16px;
+}
+
+.course-list {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.course-list li {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.logout-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 14px;
+  background-color: #e74c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.logout-link:hover {
+  background-color: #c0392b;
+}
+
+
+/* we designed this for student dashboard page */
+.dashboard-box {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+
+.home-box {
+  max-width: 500px;
+  margin: 120px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.home-box h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.home-box p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.start-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.start-button:hover {
+  background-color: #219150;
+}
+
+
+.login-links a {
+  display: block;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
