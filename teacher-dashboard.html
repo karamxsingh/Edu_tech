@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/Style.CSS" />
+  <style>
+    .section {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-box">
+    <h2>Welcome, Teacher!</h2>
+    <p>Select an option:</p>
+
+    <ul class="course-list">
+      <li><a href="progress.html">View Student Progress</a></li>
+      <li><a href="#" onclick="showSection('assignments')">Manage Assignments</a></li>
+      <li><a href="#" onclick="showSection('resources')">Upload Resources</a></li>
+    </ul>
+    <div id="assignments" class="section">
+      <h3>Manage Assignments</h3>
+      <p>Here are your current assignments:</p>
+      <ul>
+        <li>Math Worksheet – Due Aug 10</li>
+        <li>Science Project – Due Aug 15</li>
+        <li>History Essay – Due Aug 18</li>
+      </ul>
+    </div>
+    <div id="resources" class="section">
+      <h3>Upload Resources</h3>
+      <p>Resources can be uploaded here for students to use.</p>
+      <p><strong>Note:</strong> Uploading is not active at the moment.</p>
+    </div>
+
+    <a href="index.html" class="logout-link">Logout</a>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll(".section");
+      sections.forEach(sec => sec.style.display = "none");
+
+      const target = document.getElementById(sectionId);
+      if (target) {
+        target.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
